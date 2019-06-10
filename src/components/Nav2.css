@@ -1,0 +1,14 @@
+.navbar {
+  min-height: 80px;
+	box-shadow: none !important;
+
+}
+.navbar.navbar-dark.top-nav-collapse .navbar-nav .nav-item .nav-link {
+   color: black;
+}
+
+.navbarbrand {
+	content: url('/img/Logo-07-1.png');
+
+}
+.btn { box-shadow: none !important; }
