@@ -23,7 +23,7 @@ class FullPageIntroWithFixedTransparentNavbar extends React.Component {
 
 
 
-  render() {
+  render()  {
     return (
       <div>
         <header>
