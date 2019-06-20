@@ -87,3 +87,57 @@ h1 {
 	margin: 0!important;
 	padding: 0!important;
 }
+.footer-main {
+	float: left;
+	width: 100%;
+}
+.copyright-main {
+	border-top: 1px solid #212124;
+}
+.copyright-main {
+	float: left;
+	width: 100%;
+	background: #1a1a1c;
+	padding: 22px 0;
+}
+.special-bottom-footer {
+	border-top: 1px solid #212124;
+}
+
+.special-bottom-footer {
+	width: 100%;
+	float: left;
+	background-color: #212124;
+	padding: 20px 0;
+}
+.foottop{
+	margin: 0;
+	float: left;
+	width: 100%;
+	background: #1a1a1c;
+	padding: 24px 70px;
+	color: #fff;
+}
+.foottop h6{
+	font-size: 17px;
+	font-weight: 500;
+}
+.leftAling{
+	text-align: left;
+}
+.rightAling{
+	text-align: right;
+}
+.footbottom{
+  margin: 0;
+	float: left;
+	width: 100%;
+	background: #212124;
+	padding: 24px 70px;
+	color: #b2b2b2;
+}
+.footbottom .text{
+	text-align: center;
+	width: 100%;
+	font-size: 15px;
+}

@@ -23,15 +23,38 @@ const HomePage = () => (
 							<div className="dbt_image">
 								<div className="dbt_image_chain">
 								<img  src="/img/icon/Cloud_white.png" alt=""/>
+								<p className="text">SENSOR ENABLED CLOUD-BASED BRAIN MODELING</p>
 								</div>
 								<div className="dbt_image_chain">
-								<img  src="/img/icon/Cloud_white.png" alt=""/>
+								<img  src="/img/icon/Analysis_White.png" alt=""/>
+								<p className="text">MONITOR AND TRACK BRAIN RESPONSE OVER TIME</p>
 								</div>
 								<div className="dbt_image_chain">
-								<img  src="/img/icon/Cloud_white.png" alt=""/>
+								<img  src="/img/icon/Moniter_white.png" alt=""/>
+								<p className="text">MONITOR AND TRACK BRAIN RESPONSE OVER TIME</p>
 								</div>
 							</div>
-
+						</div>
+					</section>
+					<section>
+						<div className="what">
+						<h1>WHAT WE DO</h1>
+						<div className="cardsec">
+							<div className="leftCard">
+							<img  src="/img/icon/Grouparmy.png" alt=""/>
+							<div className="text">
+									<h4 >FOR SOLDIERS</h4>
+									<p>We use sensor-enabled, cloud-based platform for individualized brain modeling of Soldiers…. <a>Read more</a></p>
+								</div>
+							</div>
+							<div className="rightCard">
+							<img  src="/img/icon/Groupgame.png" alt=""/>
+								<div className="text">
+									<h4 >FOR ATHLETES</h4>
+									<p>We utilize data from the customized computer models to approximate an Athlete’s brain’s response to injuries.<a>…Read more</a></p>
+								</div>
+							</div>
+						</div>
 						</div>
 					</section>
 	</div>

@@ -42,16 +42,16 @@
 .right{
     float:right;
 }
-.understand{
+.understand, .what{
   padding: 75px 70px;
   justify-content: center;
   text-align: center;
 }
-.understand h1{
+.understand h1, .what h1{
   font-weight: 500;
   position: relative;
 }
-.understand h1:after {
+.understand h1:after, .what h1:after{
   content: "";
   background-color: #0f81dc;
   width: 90px;
@@ -71,18 +71,65 @@
 .dbt_image{
   display: flex;
   margin: 50px 0;
+  position: relative;
 }
 .dbt_image_chain {
   text-align: center;
   width: 190px;
   margin: auto;
+  z-index: 1;
 }
-/* .dbt_image_chain:after {
+.dbt_image:after {
   content: "";
   position: absolute;
   width: 59%;
   height: 1px;
   border: 2px dashed #bbb;
-  right: -30%;
+  right: 21%;
   top: 30%;
-} */
+}
+.dbt_image_chain .text{
+  width: 190px;
+  height: 72px;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: center;
+  color: #707070;
+  margin-top: 25px;
+}
+.what{
+  background: #f5f5f5;
+}
+.cardsec{
+  padding: 20px 65px;
+  display: flex;
+}
+.leftCard, .rightCard
+{
+  width: 38%;
+  margin: 45px 60px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgb(0,0,0,0.2);
+  padding-bottom: 35px;
+  padding-bottom: 20px;
+}
+.what .text h4{
+  font-size: 25px;
+  font-weight: 500;
+  margin: 15px 0 5px 0;
+  color: #000;
+}
+.what .text p{
+  font-size: 15px;
+    color: #000;
+    font-weight: 400;
+}
+.what .text{
+  padding: 0px 42px;
+}
