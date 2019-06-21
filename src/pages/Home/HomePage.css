@@ -42,16 +42,16 @@
 .right{
     float:right;
 }
-.understand, .what{
+.understand, .what, .technologies{
   padding: 75px 70px;
   justify-content: center;
   text-align: center;
 }
-.understand h1, .what h1{
+.understand h1, .what h1, .technologies h1{
   font-weight: 500;
   position: relative;
 }
-.understand h1:after, .what h1:after{
+.understand h1:after, .what h1:after, .technologies h1::after{
   content: "";
   background-color: #0f81dc;
   width: 90px;
@@ -132,4 +132,134 @@
 }
 .what .text{
   padding: 0px 42px;
+}
+.tabsection{
+  background-color: #fff;
+  box-shadow: 0px 0px 2px rgb(0,0,0,0.2);
+  margin-top: 65px;
+}
+.tabsection .nav-tabs, .tabsection .nav-link:hover, .tabsection .nav-link.active{
+  border-bottom: 0px solid #dee2e6;
+}
+.nav-tabs .nav-link {
+  border: 0px solid transparent;
+  font-size: 17px;
+  font-weight: 700;
+  color: #666!important;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+  border-color: transparent!important;
+  outline: none;
+}
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover 
+ {
+  border-color: transparent!important;
+  outline: none;
+}
+.technologies .cont .head{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+.technologies .cont{
+  padding: 30px 10px;
+}
+.image{
+  margin-right: 25px;
+}
+.subtext .hd{
+  color: #fff;
+}
+.tab1{
+  padding: 32px;
+}
+.hd{
+  font-weight: 700;
+    font-size: 28px;
+    color: #0f95f2;
+    font-weight: 700;
+    line-height: 1.2em;
+}
+.hd h4{
+  font-weight: 700;
+    font-size: 31px;
+}
+.b_chain_para{
+  text-align: center;
+    color: #727272;
+    font-size: 18px;
+    padding: 0px 0 0 16px;
+    font-weight: 400;
+}
+.barimg{
+  width: 350px;
+  height: auto;
+  max-width: 100%;
+  vertical-align: top;
+}
+.cnt{
+  display: flex;
+  margin: 13px 0;
+}
+.dbt_heading {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2em;
+  color: #000;
+  font-family: 'Open Sans',sans-serif;
+}
+.cnt .icon{
+  width: 32px;
+  margin-right: 18px;
+}
+.dbtTab {
+  font-size: 16px;
+  color: #727272;
+  margin-bottom: 35px;
+}
+.dbtTab p{
+  line-height: 25px;
+  font-family: 'Open Sans',sans-serif;
+  text-align: left;
+  font-size: 17px;
+  font-weight: 400;
+}
+.dbt_tab_section p {
+  color: #727272;
+  margin: 20px 0;
+}
+.dtb_tab_list {
+  margin-top: 15px;
+  text-align: left;
+  padding: 5px 30px;
+  font-size: 17px;
+  font-weight: 400;
+}
+.dbt_heading_with_icon {
+  display: flex;
+  margin: 13px 0;
+}
+.dtb_tab_list li {
+  position: relative;
+  list-style: none;
+  padding-left: 25px;
+  padding-top: 6px;
+}
+.dtb_tab_list li:after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #0f81dc;
+  left: 0;
+  top: 12px;
+  border-radius: 50%;
+}
+.java{
+  color: #0082b9;
+  font-size: 30px;
+  margin-bottom: 0;
+  font-family: 'Open Sans',sans-serif;
+  margin-top: 4px;
 }

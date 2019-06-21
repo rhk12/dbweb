@@ -111,7 +111,7 @@ h1 {
 	padding: 20px 0;
 }
 .foottop{
-	margin: 0;
+	margin: 0!important;
 	float: left;
 	width: 100%;
 	background: #1a1a1c;
@@ -129,7 +129,7 @@ h1 {
 	text-align: right;
 }
 .footbottom{
-  margin: 0;
+  margin: 0!important;
 	float: left;
 	width: 100%;
 	background: #212124;
