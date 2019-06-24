@@ -36,7 +36,7 @@ class FullPageIntroWithFixedTransparentNavbar extends React.Component {
               {!this.state.isWideEnough && <MDBNavbarToggler onClick={this.onClick} />}
               <MDBCollapse isOpen={this.state.collapse} navbar navbarbrand>
                 <MDBNavbarNav right>
-                  <MDBNavItem active>
+                  <MDBNavItem>
                     <MDBNavLink to="#">FRAMEWORK</MDBNavLink>
                   </MDBNavItem>
                   <MDBNavItem>
