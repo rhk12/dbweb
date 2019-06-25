@@ -5,3 +5,5 @@ build/
 *.log*
 .vscode
 *.swp
+config/AWSConfig.json
+config/cognito_configuration.js
