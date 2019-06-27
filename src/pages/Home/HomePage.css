@@ -298,3 +298,6 @@
   font-weight: 700;
   line-height: 1.2em;
 }
+.fourth-component, .first-component, .second-component, .third-component{
+  background: #fff;
+}
