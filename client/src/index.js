@@ -20,7 +20,7 @@ import 'mdbreact/dist/css/mdb.css';
 const App = () => (
   <div>
  		<FullPageIntroWithFixedTransparentNavbar />
-    <div className="container bg">
+    <div className="container">
       <Route exact={true} path="/" component={Home} />
     </div>
 		<Footer />
