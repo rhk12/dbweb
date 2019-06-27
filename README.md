@@ -1,37 +1,37 @@
-# DB Web Application
+# Digital Brain Technologies
 
-## Steps to run the application
- - Update your AWS Access key ID , Secret Key & Region in
-   the file residing in /config/AWSConfig.example.json
+Digital Brain Technologies develops premier computational brain modeling software and provides services for neural analytics. Innovative sensor and neurotechnology companies use our API to dramatically improve concussion diagnostics, monitor the brain response over decade long time periods, track the initiation and progression of neurodegenerative disease, interpret EEG signals and provide an overall digital picture of your brain.
 
- - Rename the AWSConfig.example.json to AWSConfig.json
+The source code of this project can be cloned from the GitHub repository <git@github.com:rhk12/dbweb.git>.
 
- - Update your AWS Cognito Credentials like : userPoolId, region & ClientId in
-   the file residing in /config/cognito_configuration.example.json.
-   - Set  apiVersion as "2016-04-19"
+Installation instructions
+	•	Be sure to have installed Node.js in your system:
 
- - Rename the cognito_configuration.example.json to cognito_configuration.json
+	•	Download the code using git and install manually its dependencies:
 
- - IMPORTANT: do not upload Access keys to web (e.g. github, google drive)
-```sh
+	•	git clone git@github.com:rhk12/dbweb.git
+	•	cd dbweb/
+	•	npm install
+	•	ng  start
 
-# Pre-Requisite dependencies
+To install the dependency packages , you need to run npm install in your project. To run the server of the ReactJS you have to run npm start , it will automatically open your application on your browser .
 
-# If on linux : sudo is required with -g based npm commands (They are global dependencies being installed in System)
 
-# To run npm commands concurrently
-$ sudo npm install -g concurrently
 
-# To create daemon process of node server for development purpose
-$ sudo npm install -g nodemon
+Documentation
+https://reactjs.org/docs/getting-started.html
 
-# To install Project's dependencies
-# Then in project root's directory run the following commands :
-$ npm run init
+Source
+git@github.com:rhk12/dbweb.git
 
-# To Run the Application locally:
-$ npm start
 
-# To Run the Application in Dev mode:
-$ npm run start-dev
-```
+
+Issue tracker
+
+Licensing and distribution
+
+Third-party libraries
+	•	Jquery:
+	•	jQuery is a fast, small, and feature-rich JavaScript library.
+
+Third-party Services
