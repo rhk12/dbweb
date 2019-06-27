@@ -3,7 +3,7 @@ import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 
 const Footer = () => {
   return (
-    <footer>
+    <footer style={{position: 'fixed', bottom: 0, left:0, right:0, zIndex: -999}}>
       <div>
         <MDBRow className="foottop">
           <MDBCol size="6">
