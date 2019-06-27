@@ -1,4 +1,4 @@
-# Digital Brain Web Application
+# DB Web Application
 
 ## Steps to run the application
  - Update your AWS Access key ID , Secret Key & Region in
