@@ -33,6 +33,7 @@ export default () => {
                     </div>
                   </MDBCol>
                   <MDBCol size="5" className="bannerText">
+                  
                     <div className="barimg">
                       <img src="/img/icon/Group-2426.png" alt="" />
                     </div>
