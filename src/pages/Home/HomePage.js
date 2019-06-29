@@ -1,17 +1,42 @@
 import React, { Fragment } from "react";
+import ReactPageScroller from "react-page-scroller";
 
 import "./HomePage.css";
+import FirstComponent from "./FirstComponent";
+import SecondComponent from "./SecondComponent";
+import ThirdComponent from "./ThirdComponent";
+import FourthComponent from "./FourthComponent";
 
-const HomePage = () => (
-  <Fragment>
+export default class HomePage extends React.Component {
+  constructor(props) {
+      super(props);
+      this.state = {currentPage: 1};
+      this._pageScroller = null;
+  }
 
-		<div class="headerimg">
+  goToPage = (eventKey) => {
+      this._pageScroller.goToPage(eventKey);
+  };
 
- 		</div>
-		<h2 class="topspace2">Add Text here.</h2>
+  pageOnChange = (number) => {
+      this.setState({currentPage: number});
+  };
 
 
-  </Fragment>
-);
+  lastSlide = (e) => {
+    console.log("last ==========", e);
+    console.log("this.state.currentPage", this.state.currentPage);
+};
 
-export default HomePage;
+
+  render() {
+      return <React.Fragment>
+          <ReactPageScroller ref={c => this._pageScroller = c} pageOnChange={this.pageOnChange} scrollUnavailable={this.lastSlide}>
+            <FirstComponent/>
+            <SecondComponent/>
+            <ThirdComponent/>
+          </ReactPageScroller>
+          <FourthComponent  goToPage={this.goToPage} />
+      </React.Fragment>
+  }
+}
