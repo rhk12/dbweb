@@ -13,11 +13,9 @@ export default class HomePage extends React.Component {
       this.state = {currentPage: 1};
       this._pageScroller = null;
   }
-
   goToPage = (eventKey) => {
       this._pageScroller.goToPage(eventKey);
   };
-
   pageOnChange = (number) => {
       this.setState({currentPage: number});
   };
@@ -30,13 +28,13 @@ export default class HomePage extends React.Component {
 
 
   render() {
-      return <React.Fragment>
+      return <Fragment>
           <ReactPageScroller ref={c => this._pageScroller = c} pageOnChange={this.pageOnChange} scrollUnavailable={this.lastSlide}>
             <FirstComponent/>
             <SecondComponent/>
             <ThirdComponent/>
+            <FourthComponent  goToPage={this.goToPage} />
           </ReactPageScroller>
-          <FourthComponent  goToPage={this.goToPage} />
-      </React.Fragment>
+      </Fragment>
   }
 }

@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 
 // PAGES
 import Home from "./pages/Home/HomePage";
+import Demo from "./pages/demo/demo"
 
 import "./index.css";
 
@@ -22,6 +23,7 @@ const App = () => (
  		<FullPageIntroWithFixedTransparentNavbar />
     <div className="container bg">
       <Route exact={true} path="/" component={Home} />
+      <Route exact={true} path="/demo" component={Demo} />
     </div>
 		<Footer />
   </div>
