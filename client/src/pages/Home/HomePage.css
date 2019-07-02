@@ -136,6 +136,7 @@
 }
 .what{
   background: #f5f5f5;
+  height: 100vh;
 }
 .cardsec{
   padding: 20px 65px;
@@ -169,135 +170,65 @@
   padding: 0px 42px;
 }
 .tabsection{
-  background-color: #fff;
-  box-shadow: 0px 0px 2px rgb(0,0,0,0.2);
-  margin-top: 65px;
+  padding: 30px 140px;
 }
-.tabsection .nav-tabs, .tabsection .nav-link:hover, .tabsection .nav-link.active{
-  border-bottom: 0px solid #dee2e6;
-}
-.nav-tabs .nav-link {
-  border: 0px solid transparent;
-  font-size: 17px;
-  font-weight: 700;
-  color: #666!important;
-}
-.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
-  border-color: transparent!important;
-  outline: none;
-}
-.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover 
- {
-  border-color: transparent!important;
-  outline: none;
-}
-.technologies .cont .head{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 25px;
-}
-.technologies .cont{
-  padding: 30px 10px;
-}
-.image{
-  margin-right: 25px;
-}
-.subtext .hd{
-  color: #fff;
-}
-.tab1{
-  padding: 32px;
+.tabsection .imagetag img{
+  width: 95%;
 }
 
-.hd h4{
-  font-weight: 700;
-    font-size: 31px;
-}
-.b_chain_para{
-  text-align: center;
-    color: #727272;
-    font-size: 18px;
-    padding: 0px 0 0 16px;
-    font-weight: 400;
-}
-.barimg{
-  width: 350px;
-  height: auto;
-  max-width: 100%;
-  vertical-align: top;
-}
-.cnt{
-  display: flex;
-  margin: 13px 0;
-}
-.dbt_heading {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 1.2em;
-  color: #000;
-  font-family: 'Open Sans',sans-serif;
-}
-.cnt .icon{
-  width: 32px;
-  margin-right: 18px;
-}
-.dbtTab {
-  font-size: 16px;
-  color: #727272;
-  margin-bottom: 35px;
-}
-.dbtTab p{
-  line-height: 25px;
-  font-family: 'Open Sans',sans-serif;
-  text-align: left;
-  font-size: 17px;
-  font-weight: 400;
-}
-.dbt_tab_section p {
-  color: #727272;
-  margin: 20px 0;
-}
-.dtb_tab_list {
-  margin-top: 15px;
-  text-align: left;
-  padding: 5px 30px;
-  font-size: 17px;
-  font-weight: 400;
-}
-.dbt_heading_with_icon {
-  display: flex;
-  margin: 13px 0;
-}
-.dtb_tab_list li {
+.bannerArea{
+  background: url(../../img/Banner.png);
   position: relative;
-  list-style: none;
-  padding-left: 25px;
-  padding-top: 6px;
 }
-.dtb_tab_list li:after {
-  content: "";
+.bannerText{
   position: absolute;
-  width: 10px;
-  height: 10px;
-  background-color: #0f81dc;
-  left: 0;
-  top: 12px;
-  border-radius: 50%;
+    width: 45%;
+    color: #fff;
+    top: 45%;
+    left: 71px;
 }
-.java{
-  color: #0082b9;
-  font-size: 30px;
-  margin-bottom: 0;
-  font-family: 'Open Sans',sans-serif;
-  margin-top: 4px;
+.bannerText h4{
+  font-family: Roboto;
+  font-size: 37px;
+  font-weight: 600;
 }
-.technologies .cont .head {
-  font-size: 28px;
-  color: #0f95f2;
-  font-weight: 700;
-  line-height: 1.2em;
+.bannerText p{
+  font-size: 24px;
+  font-family: Roboto;
+  font-weight: 600;
+  margin-top: 20px;
 }
-.fourth-component, .first-component, .second-component, .third-component{
-  background: #fff;
+.textsection{
+  margin-bottom: 25px;
+}
+.textsection img{
+  width: 32px;
+}
+.textsection .head{
+  display: flex;
+}
+.textsection .head img{
+  width: 30px;
+  height: 30px;
+  margin-top: 5px;
+}
+.textsection .head span{
+  font-size: 25px;
+  font-family: Roboto;
+  margin: 0 10px;
+  font-weight: 800;
+  color: #0F81DC;
+}
+.para p{
+  text-align: left;
+  font-size: 13px;
+  font-family: roboto;
+  color: #727272;
+  font-weight: 300;
+}
+.para {
+    margin: 10px 0;
+}
+.hd{
+  color: #000;
 }
