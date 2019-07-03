@@ -131,3 +131,15 @@
 .white{
   box-shadow: 0px 1px 10px #999!important;
 }
+.activehead .navbar{
+  background: #0F81DC!important;
+}
+/* .activehead .scrollimage{
+  display: inherit!important;
+}
+.activehead .fixedimage{
+  display: none!important;
+} */
+.navbar.navbar-dark.fixed-top.navbar-expand-md.scrolling-navbar{
+  padding: 0px 70px;
+}
