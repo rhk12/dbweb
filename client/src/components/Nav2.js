@@ -22,11 +22,10 @@ class FullPageIntroWithFixedTransparentNavbar extends React.Component {
   }
 
 
-
   render()  {
     return (
       <div>
-        <header>
+        <header className="header">
           <Router>
             <MDBNavbar color="white" fixed="top" dark expand="md"  scrolling transparent class="rk-custom-navbar">
               <MDBNavbarBrand href="/">

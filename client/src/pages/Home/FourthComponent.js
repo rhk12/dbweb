@@ -10,29 +10,39 @@ export default () => {
           <h1>TECHNOLOGIES WE USE</h1>
           <div className="tabsection">
           <MDBRow>
-            <MDBCol size="5">
+            <MDBCol size="4" className="leftDiv">
             <div className="imagetag">
-            <img src="/img/icon/Group-2497.png" alt="" />
+            <img src={require('./../../img/001-medical-history.svg')}/>
+            </div>
+            <div className="text">
+              <h4>
+              Wireless Wearable Sensors
+              </h4>
+              <p>We partner with leading impact and blast sensor companies to provide real-time brain response analytics. We help transform their data into meaningful brain health monitoring.  Looking for a sensor? See our recommended providers here. </p>
             </div>
             </MDBCol>
-            <MDBCol size="7">
+            <MDBCol size="4">
             <div className="textsection">
-              <div className="head">
-                <img src="/img/icon/blockchain-1.png" alt="" /><span>Blockchain</span>
-            </div>
-            <div className="para">
-              <p>Blockchain is a distributed and unchangeable (write once and read-only) record of digital events that are shared peer-to-peer between different parties (networked database systems). Data integrity and networked immutability are the core strength of its cyber-ecosystem for computational brain medicine.</p>
-            </div>
-            </div>
-            <div className="textsection">
-              <div className="head">
-                <img src="/img/icon/001-medical-history.png" alt="" /><span className="hd">Compliance</span>
-            </div>
-            <div className="para">
-              <p>The Digital Brain Technologies Platform is designed to work for population health. It is completely HIPAA (US) & GDPR (Europe) compliant. Blockchain being its underlying technology, the Digital Brain Technologies platform accurately abides by the privacy and regulatory compliance of patients’ medical records.</p>
+            <div className="imagetag">
+            <img src={require('./../../img/Group-2426.svg')}/>
             </div>
             </div>
             </MDBCol>
+            <MDBCol size="4" className="rightDiv">
+            <div className="imagetag">
+            <img src={require('./../../img/Group 2669.svg')}/>
+            </div>
+            <div className="text">
+              <h4>
+              Computational Brain<br/> Medicine
+              </h4>
+              <p>Computational Brain Medicine (CBM) is a transformative and emerging discipline that uses computers to understand, diagnose, develop treatment options, and monitor brain health. It leverages engineering, mathematics and computational science to develop quantitative approaches for brain health applications.
+</p>
+            </div>
+            </MDBCol>
+            <div className="read_Bnt">
+              <button>Read More</button>
+            </div>
           </MDBRow>
            </div>
         </div>

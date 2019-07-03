@@ -8,23 +8,20 @@ export default () => {
           <h1>WHAT WE DO</h1>
           <div className="cardsec">
             <div className="leftCard">
-              <img src="/img/icon/Grouparmy.png" alt="" />
+              <img src="/img/icon/Group 2669.png" alt="" />
               <div className="text">
                 <h4>FOR SOLDIERS</h4>
                 <p>
-                  We use sensor-enabled, cloud-based platform for individualized
-                  brain modeling of Soldiers…. <a>Read more</a>
+                Using data from blast gauges and impact sensors we simulate every single head insult a Soldier experiences. We help transform operational blast exposure data into decisions.
                 </p>
               </div>
             </div>
             <div className="rightCard">
-              <img src="/img/icon/Groupgame.png" alt="" />
+              <img src="/img/icon/Group 2668.png" alt="" />
               <div className="text">
                 <h4>FOR ATHLETES</h4>
                 <p>
-                  We utilize data from the customized computer models to
-                  approximate an Athlete’s brain’s response to injuries.
-                  <a>…Read more</a>
+                Sports head impact sensors are now becoming mainstream. We use the data collected from the sensors as input into athlete-specific models to monitor the brain's response to impact. 
                 </p>
               </div>
             </div>
