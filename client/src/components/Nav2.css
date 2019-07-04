@@ -31,15 +31,11 @@
 {
   display: inherit
 }
-.white .fixedimage{
-  display: none;
-}
+
 .scrollimage{
   display: none;
 }
-.white .scrollimage{
-  display: inherit
-}
+
 .navbar.navbar-dark.fixed-top.navbar-expand-md.scrolling-navbar{
   padding: 20px 70px;
 }
@@ -132,7 +128,7 @@
   box-shadow: 0px 1px 10px #999!important;
 }
 .activehead .navbar{
-  background: #0F81DC!important;
+  background: #084371!important;
 }
 /* .activehead .scrollimage{
   display: inherit!important;
@@ -142,4 +138,8 @@
 } */
 .navbar.navbar-dark.fixed-top.navbar-expand-md.scrolling-navbar{
   padding: 0px 70px;
+}
+
+.navbar.navbar-dark.top-nav-collapse .navbar-nav .nav-item .nav-link{
+  color: #fff !important;
 }
