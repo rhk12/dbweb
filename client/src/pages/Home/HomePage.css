@@ -186,14 +186,17 @@
 .bannerArea{
   background: url(../../img/Banner.png);
   position: relative;
-  background-repeat: round;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 .bannerText{
   position: absolute;
     width: 45%;
     color: #fff;
     top: 45%;
-    left: 71px;
+    left: 100px;
 }
 .bannerText h4{
   font-family: Roboto;
@@ -208,6 +211,9 @@
 }
 .textsection{
   margin-bottom: 25px;
+}
+.textsection .imagetag{
+  text-align: -webkit-center;
 }
 .textsection img{
   
@@ -365,6 +371,14 @@ color: #2ecc71;
 .rightDiv .text{
   text-align: right;
 }
+.leftDiv .imagetag img{
+  width: 26%;
+}
 .rightDiv .imagetag{
   text-align: -webkit-right;
+}
+.first-component{
+  padding-top: 45px;
+  background: #084371!important;
+  height: 100vh;
 }
