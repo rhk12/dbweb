@@ -186,6 +186,7 @@
 .bannerArea{
   background: url(../../img/Banner.png);
   position: relative;
+  background-repeat: round;
 }
 .bannerText{
   position: absolute;

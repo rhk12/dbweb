@@ -19,16 +19,21 @@ export default class HomePage extends React.Component {
       console.log('eventKey',eventKey)
   };
   pageOnChange = (number) => {
-    console.log(number);
-    
-      this.setState({currentPage: number});
-      console.log("currentpage", this.state.currentPage)
-      if(number === 1){
+    this.setState({currentPage: number});
+    if(number === 1){
         $(".header").removeClass("activehead");
-      } else {
+    } else {
         $(".header").addClass("activehead");
 
-      }
+    }
+    this.setState({currentPage: number});
+    if(number === 4){
+      $(".footer_section").addClass("footerActive");
+    } else {
+      $(".footer_section").removeClass("footerActive");
+
+    }
+    
   };
 
   render() {

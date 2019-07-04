@@ -114,7 +114,6 @@ h1 {
 	margin: 0!important;
 	float: left;
 	width: 100%;
-	background: #1a1a1c;
 	padding: 24px 70px;
 	color: #fff;
 }
@@ -128,22 +127,100 @@ h1 {
 .rightAling{
 	text-align: right;
 }
-.footbottom{
-  margin: 0!important;
-	float: left;
-	width: 100%;
-	background: #212124;
-	padding: 24px 70px;
-	color: #b2b2b2;
-}
-.footbottom .text{
-	text-align: center;
-	width: 100%;
-	font-size: 15px;
-}
+
 .bg{
 	background: #fff;
 }
 .bg > div:first-child{
 	width: 100%!important
+}
+.footer_section{
+	position: fixed;
+	bottom: 0;
+	left:0;
+	right:0;
+	z-index: -999;
+	background: #183c56;
+}
+.footerActive{
+	position: relative!important;
+}
+.footer_top{
+	margin: 0!important;
+	border-bottom: 2px solid #fff;
+	padding: 20px 0;
+}
+.footer_section .main{
+	padding: 0px 100px;
+}
+.footer_section .button_s{
+	width: 83%;
+	text-align: right;
+	margin-top: 5px;
+}
+.footer_section .button_s button{
+	background: #0e81dc;
+	border: 0;
+	border-radius: 5px;
+	padding: 10px 30px;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 500;
+	outline: none;
+}
+.footer_bottom{
+	padding: 15px 0;
+	margin: 0!important;
+}
+.fb{
+	width: 100%;
+	display: flex;
+	color: #fff;
+	margin-top: 10px;
+}
+.fb .menu span{
+	padding: 0 10px;
+  font-size: 14px;
+  font-family: initial;
+  border-right: 2px solid;
+}
+.pd_0{
+	padding-left: 0!important;
+}
+.br{
+	border: 0!important
+}
+.footer_bottom .cot{
+	color: #fff;
+	font-size: 14px;
+	font-family: initial;
+	letter-spacing: 0.5px;
+}
+.footer_bottom .copyry{
+	width: 60%;
+	font-size: 13.5px;
+	font-family: initial;
+	text-align: center;
+	margin-top: 5px;
+}
+.footer_bottom .icon{
+	width: 23%;
+	text-align: right;
+}
+.fb .icon span{
+	font-size: 19px;
+  font-weight: 800;
+  padding-left: 23px;
+}
+body::-webkit-scrollbar {
+	width: 0px;
+}
+
+body::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+background-color: darkgrey;
+outline: 1px solid slategrey;
 }

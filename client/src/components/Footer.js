@@ -3,20 +3,31 @@ import { MDBCol, MDBRow } from "mdbreact";
 
 const Footer = () => {
   return (
-    <footer style={{position: 'fixed', bottom: 0, left:0, right:0, zIndex: -999}}>
-      <div>
-        <MDBRow className="foottop">
-          <MDBCol size="6">
-            <h6>Follow Us:</h6>
-          </MDBCol>
-          <MDBCol size="6" className="rightAling">
-          <h6> Newsletter Subscribe:</h6>
-          </MDBCol>
+    <footer className="footer_section">
+      <div className="main">
+        <MDBRow className="footer_top">
+          <div className="logo">
+            <img src="../img/Logo.png"/>
+          </div>
+          <div className="button_s">
+            <button>Get Updates</button>
+          </div>
         </MDBRow>
-      </div>
-      <div>
-      <MDBRow className="footbottom">
-          <div className="text">Digital Brain Technologies, LLC. © 2019 All right reserved.</div>
+        <MDBRow className="footer_bottom">
+          <div className="cot">Contact Us: Info@digitialbraintech.com</div>
+          <div className="fb">
+            <div className="menu">
+              <span className="pd_0">IP</span>
+              <span>Privacy Policy</span>
+              <span className="br">Careers</span>
+            </div>
+            <div className="copyry">Copyright &copy; 2019 Digital Brain tech. All Rights Reserved.</div>
+          <div className="icon">
+            <span><i class="fab fa-facebook-f"></i></span>
+            <span><i class="fab fa-twitter"></i></span>
+            <span><i class="fab fa-instagram"></i></span>
+          </div>
+          </div>
         </MDBRow>
       </div>
     </footer>
