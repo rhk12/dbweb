@@ -37,7 +37,7 @@
 }
 
 .navbar.navbar-dark.fixed-top.navbar-expand-md.scrolling-navbar{
-  padding: 20px 70px;
+  padding: 20px 100px;
 }
 .bannerArea{
   background: linear-gradient(90deg, rgb(8, 65, 110) 0%, rgb(13, 110, 187) 69%, rgb(15, 129, 220) 98%);
@@ -137,7 +137,9 @@
   display: none!important;
 } */
 .navbar.navbar-dark.fixed-top.navbar-expand-md.scrolling-navbar{
-  padding: 0px 70px;
+  padding: 0px 100px;
+  background-image: linear-gradient(to right, #09416e, #0f7ed6);
+
 }
 
 .navbar.navbar-dark.top-nav-collapse .navbar-nav .nav-item .nav-link{

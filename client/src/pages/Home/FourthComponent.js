@@ -12,7 +12,8 @@ export default () => {
           <MDBRow>
             <MDBCol size="4" className="leftDiv">
             <div className="imagetag">
-            <img src={require('./../../img/001-medical-history.svg')}/>
+            <img src={require('./../../img/iot-sensor-icon-8.png')}/>
+            {/* <img src={require('./../../img/001-medical-history.svg')}/> */}
             </div>
             <div className="text">
               <h4>
@@ -24,7 +25,7 @@ export default () => {
             <MDBCol size="4">
             <div className="textsection">
             <div className="imagetag">
-            <img src={require('./../../img/iot-sensor-icon-8.png')}/>
+            <img src={require('./../../img/Group-2426.svg')}/>
             </div>
             </div>
             </MDBCol>
@@ -36,7 +37,8 @@ export default () => {
               <h4>
               Computational Brain<br/> Medicine
               </h4>
-              <p>Computational Brain Medicine (CBM) is a transformative and emerging discipline that uses computers to understand, diagnose, develop treatment options, and monitor brain health. It leverages engineering, mathematics and computational science to develop quantitative approaches for brain health applications.</p>
+              <p>Computational Brain Medicine (CBM) is a transformative and emerging discipline that uses computers to understand, diagnose, develop treatment options, and monitor brain health. It leverages engineering, mathematics and computational science to develop quantitative approaches for brain health applications.
+</p>
             </div>
             </MDBCol>
             <div className="read_Bnt">
