@@ -221,3 +221,152 @@ body::-webkit-scrollbar-thumb {
 background-color: darkgrey;
 outline: 1px solid slategrey;
 }
+
+
+/* Responcive for big screen */
+@media (min-width: 2500px) {
+
+	.navbar.navbar-dark.fixed-top.navbar-expand-md.scrolling-navbar {
+		padding: 35px 150px;
+
+	}
+	.fixedimage, .footer_top img{
+		width: 400px;
+	}
+	.bannerText {
+		left: 150px;
+	}
+	.understand, .what, .technologies {
+		padding: 250px 150px;
+		-ms-flex-pack: center;
+		justify-content: center;
+		text-align: center;
+	}
+	.nav-link {
+		font-size: 25px;
+	}
+	.bannerText h4 {
+		font-size: 80px;
+		font-weight: 700;
+	}
+	.bannerText p {
+		font-size: 60px;
+		font-weight: 500;
+	}
+	.understand h1:after, .what h1:after, .technologies h1::after {
+    content: "";
+    background-color: #0f81dc;
+    width: 200px;
+    height: 9px;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.understand h1, .what h1, .technologies h1 {
+    font-size: 100px!important;
+}
+.dbt_heading_para {
+    margin-top: 120px;
+}
+.dbt_heading_para p{
+	font-size: 48px;
+}
+.image_chain3:hover, .image_chain1:hover, .image_chain2:hover{
+    background: url(/static/media/Moniterhover.76e5a440.png);
+    width: 400px;
+	height: 400px;
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.image_chain2, .image_chain3, .image_chain1 {
+    width: 400px;
+	height: 400px;
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.dbt_image_chain .text {
+	width: 460px;
+	font-size: 40px;
+}
+.dbt_image {
+    margin: 200px auto;
+}
+.cardsec {
+    padding: 120px 0px;
+}
+.what .text h4 {
+    font-size: 70px;
+    margin: 29px 0 5px 0;
+}
+.what .text p {
+    font-size: 45px;
+    margin-top: 24px;
+}
+/* .leftDiv .imagetag img {
+    width: 50%;
+} */
+.tabsection .imagetag img {
+	width: 50%;
+}
+.textsection .imagetag img {
+	width: 1800px;
+	margin: 158px auto;
+}
+.tabsection {
+    padding: 200px 30px;
+}
+.leftDiv h4, .rightDiv h4 {
+    font-size: 55px;
+    margin: 30px 0;
+}
+.rightDiv h4 {
+    line-height: 72px;
+}
+.leftDiv p, .rightDiv p {
+    font-size: 35px;
+    line-height: 60px;
+}
+.read_Bnt button {
+    border: 2px solid #0f81dc;
+    font-size: 55px;
+    padding: 10px 130px;
+    border-radius: 15px;
+}
+.footer_bottom .cot {
+    font-size: 30px;
+}
+.fb {
+    margin-top: 20px;
+}
+.fb .menu span {
+    padding: 0 10px;
+    font-size: 25px;
+    border-right: 3px solid;
+}
+.footer_bottom .copyry {
+    width: 60%;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 5px;
+}
+.fb .icon span {
+    font-size: 45px;
+    font-weight: 800;
+    padding-left: 78px;
+}
+.footer_section .button_s button {
+    padding: 10px 75px;
+    font-size: 30px;
+}
+.footer_section .button_s {
+    margin-top: 30px;
+}
+.navbar.navbar-dark.top-nav-collapse .navbar-nav .nav-item .nav-link {
+    font-size: 25px;
+}
+}
