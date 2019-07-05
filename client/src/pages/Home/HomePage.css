@@ -184,7 +184,7 @@
 }
 
 .bannerArea{
-  background: url(../../img/Banner.png);
+  background: url(../../img/Banner1.png);
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
@@ -377,8 +377,8 @@ color: #2ecc71;
 .rightDiv .imagetag{
   text-align: -webkit-right;
 }
-.first-component{
+/* .first-component{
   padding-top: 45px;
   background: #084371!important;
   height: 100vh;
-}
+} */

@@ -1,6 +1,5 @@
 import React from "react";
 import { MDBRow, MDBCol } from "mdbreact";
-import { Tabs, Tab } from "react-bootstrap-tabs";
 
 export default () => {
   return (

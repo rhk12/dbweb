@@ -27,13 +27,13 @@ class FullPageIntroWithFixedTransparentNavbar extends React.Component {
       <div>
         <header className="header">
           <Router>
-            <MDBNavbar color="white" fixed="top" dark expand="md"  scrolling transparent class="rk-custom-navbar">
+            <MDBNavbar color="white" fixed="top" dark expand="md"  scrolling transparent className="rk-custom-navbar">
               <MDBNavbarBrand href="/">
 								<img className="fixedimage" src="/img/Logo.png" height="300" alt=""/>
                 <img className="scrollimage" src="https://www.digitalbraintech.com/wp-content/uploads/2017/11/Logo-07-1.png" height="300" alt=""/>
               </MDBNavbarBrand>
               {!this.state.isWideEnough && <MDBNavbarToggler onClick={this.onClick} />}
-              <MDBCollapse isOpen={this.state.collapse} navbar navbarbrand>
+              <MDBCollapse isOpen={this.state.collapse} navbar>
                 <MDBNavbarNav right>
                   <MDBNavItem>
                     <MDBNavLink to="#">FRAMEWORK</MDBNavLink>

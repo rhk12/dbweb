@@ -181,7 +181,6 @@ h1 {
 .fb .menu span{
 	padding: 0 10px;
   font-size: 14px;
-  font-family: initial;
   border-right: 2px solid;
 }
 .pd_0{
@@ -193,13 +192,11 @@ h1 {
 .footer_bottom .cot{
 	color: #fff;
 	font-size: 14px;
-	font-family: initial;
 	letter-spacing: 0.5px;
 }
 .footer_bottom .copyry{
 	width: 60%;
 	font-size: 13.5px;
-	font-family: initial;
 	text-align: center;
 	margin-top: 5px;
 }

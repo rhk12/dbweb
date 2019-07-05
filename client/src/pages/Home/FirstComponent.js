@@ -8,7 +8,7 @@ export default () => {
                 <h4>MONITOR YOUR BRAIN HEALTH</h4>
                 <p>Accurate brain simulations to help transform your sensor data into actionable insights about brain trauma</p>
                 </div>
-                <div class="downArrow bounce">
+                <div className="downArrow bounce">
                 <img src={require('./../../img/down-arrow.png')}/>
                 </div>
                 </div>
