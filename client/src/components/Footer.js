@@ -1,5 +1,5 @@
 import React from 'react';
-import { MDBCol, MDBRow } from "mdbreact";
+import {MDBRow } from "mdbreact";
 
 const Footer = () => {
   return (
@@ -23,9 +23,9 @@ const Footer = () => {
             </div>
             <div className="copyry">Copyright &copy; 2019 Digital Brain tech. All Rights Reserved.</div>
           <div className="icon">
-            <span><i class="fab fa-facebook-f"></i></span>
-            <span><i class="fab fa-twitter"></i></span>
-            <span><i class="fab fa-instagram"></i></span>
+            <span><i className="fab fa-facebook-f"></i></span>
+            <span><i className="fab fa-twitter"></i></span>
+            <span><i className="fab fa-instagram"></i></span>
           </div>
           </div>
         </MDBRow>

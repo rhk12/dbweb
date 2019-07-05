@@ -28,21 +28,24 @@ export default class HomePage extends React.Component {
     }
     this.setState({currentPage: number});
     if(number === 4){
-      $(".footer_section").addClass("footerActive");
+      // $(".footer_section").addClass("footerActive");
     } else {
       $(".footer_section").removeClass("footerActive");
 
     }
     
   };
+  scrollUnavailable = (eventKey) => {
+    $(".footer_section").addClass("footerActive");
+};
 
   render() {
       return <Fragment>
-          <ReactPageScroller ref={c => this._pageScroller = c} pageOnChange={this.pageOnChange} scrollUnavailable={this.lastSlide} pageOnChange={this.pageOnChange} >
+          <ReactPageScroller ref={c => this._pageScroller = c} pageOnChange={this.pageOnChange} scrollUnavailable={this.scrollUnavailable}>
             <FirstComponent/>
             <SecondComponent/>
             <ThirdComponent/>
-            <FourthComponent  goToPage={this.goToPage} />
+            <FourthComponent  goToPage={this.goToPage}/>
           </ReactPageScroller>
       </Fragment>
   }
