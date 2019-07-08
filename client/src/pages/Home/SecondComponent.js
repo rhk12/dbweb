@@ -16,7 +16,7 @@ export default () => {
 							We provide the ability to <font color="#084371"> <b>track the accumulated stretching
 							of brain tissue </b></font>due to repetative impacts or blasts.
 
-							Currently, we do not provide a medically-valideated, FDA-approved
+							Currently, we do not provide a medically-validated, FDA-approved
 							diagnostic device, but that is our long-term goal.
 
 							
