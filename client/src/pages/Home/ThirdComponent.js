@@ -5,10 +5,10 @@ export default () => {
     <div className="component third-component">
       <section className="container">
         <div className="what">
-          <h1>WHAT WE DO</h1>
+          <h1 className="anima">WHAT WE DO</h1>
           <div className="cardsec">
             <div className="leftCard">
-              <img src="/img/icon/Group 2669.png" alt="" />
+              <img src="/img/icon/Group-2491.png" alt="" />
               <div className="text">
                 <h4>FOR SOLDIERS</h4>
                 <p>
@@ -17,7 +17,7 @@ export default () => {
               </div>
             </div>
             <div className="rightCard">
-              <img src="/img/icon/Group 2668.png" alt="" />
+              <img src="/img/icon/Group-2494.png" alt="" />
               <div className="text">
                 <h4>FOR ATHLETES</h4>
                 <p>

@@ -22,8 +22,13 @@ export default class HomePage extends React.Component {
     this.setState({currentPage: number});
     if(number === 1){
         $(".header").removeClass("activehead");
+        $(".anima").removeClass("underline-from-center");
     } else {
         $(".header").addClass("activehead");
+        setTimeout(function () {
+          $(".anima").addClass("underline-from-center");
+      }, 1000);
+        
 
     }
     this.setState({currentPage: number});
@@ -33,7 +38,6 @@ export default class HomePage extends React.Component {
       $(".footer_section").removeClass("footerActive");
 
     }
-    
   };
   scrollUnavailable = (eventKey) => {
     $(".footer_section").addClass("footerActive");

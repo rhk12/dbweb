@@ -370,3 +370,23 @@ outline: 1px solid slategrey;
     font-size: 25px;
 }
 }
+.anima:before
+{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  background: #2980b9;
+  height: 4px;
+  transition: 0.4s all ease-in-out;
+  left: 0;
+  right: 0;
+  width: 20px;
+  margin: 0 auto;
+}
+.anima.underline-from-center:before {
+ 
+  width: 100%;
+}

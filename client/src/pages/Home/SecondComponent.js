@@ -5,7 +5,7 @@ export default () => {
     <div className="component second-component">
       <section className="container">
         <div className="understand">
-          <h1>UNDERSTAND YOUR BRAIN</h1>
+          <h1 className="anima">UNDERSTAND YOUR BRAIN</h1>
           <div className="dbt_heading_para">
             <p>
               Digital Brain Technologies develops premier computational brain
