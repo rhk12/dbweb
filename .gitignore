@@ -5,6 +5,8 @@ build/
 *.log*
 .vscode
 *.swp
+package-lock.json
+client/package-lock.json
 config/AWSConfig.json
 config/cognito_configuration.js
 config/configuration_keys.js
