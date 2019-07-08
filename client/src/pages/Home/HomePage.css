@@ -51,7 +51,7 @@
   font-weight: 500;
   position: relative;
 }
-.understand h1:after, .what h1:after, .technologies h1::after{
+/* .understand h1:after, .what h1:after, .technologies h1::after{
   content: "";
   background-color: #0f81dc;
   width: 90px;
@@ -60,7 +60,7 @@
   bottom: -14px;
   left: 50%;
   transform: translateX(-50%);
-}
+} */
 .dbt_heading_para {
   margin-top: 38px;
   color: #707070;
@@ -150,8 +150,8 @@
 }
 .leftCard, .rightCard
 {
-  margin: 45px 20px 45px 10px;
-  width: 47%;
+  margin: 20px 20px 20px 10px;
+  width: 45%;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 0 6px rgb(0,0,0,0.2);
@@ -168,10 +168,10 @@
   color: #242424;
   font-family: roboto;
 }
-.what .text p{
+.what .text p {
   font-size: 15px;
-    color: #848484;
-    font-weight: 400;
+  color: #0f81dc;
+  font-weight: 400;
 }
 .what .text{
   padding: 0px 5px;
@@ -382,3 +382,4 @@ color: #2ecc71;
   background: #084371!important;
   height: 100vh;
 } */
+

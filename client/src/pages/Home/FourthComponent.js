@@ -6,7 +6,7 @@ export default () => {
     <div className="component fourth-component" style={{marginBottom: '150px'}}>
       <section className="container">
         <div className="technologies">
-          <h1>TECHNOLOGIES WE USE</h1>
+          <h1 className="anima">TECHNOLOGIES WE USE</h1>
           <div className="tabsection">
           <MDBRow>
             <MDBCol size="4" className="leftDiv">
@@ -24,7 +24,7 @@ export default () => {
             <MDBCol size="4">
             <div className="textsection">
             <div className="imagetag">
-            <img src={require('./../../img/Group-2426.svg')}/>
+            <img src={require('./../../img/Group 2712.png')}/>
             </div>
             </div>
             </MDBCol>
