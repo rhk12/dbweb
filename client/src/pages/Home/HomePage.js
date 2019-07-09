@@ -28,8 +28,6 @@ export default class HomePage extends React.Component {
         setTimeout(function () {
           $(".anima").addClass("underline-from-center");
       }, 1000);
-        
-
     }
     this.setState({currentPage: number});
     if(number === 4){

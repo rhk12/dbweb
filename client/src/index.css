@@ -377,7 +377,7 @@ outline: 1px solid slategrey;
   z-index: -1;
   left: 50%;
   right: 50%;
-  bottom: 0;
+  bottom: -5px;
   background: #2980b9;
   height: 4px;
   transition: 0.4s all ease-in-out;
