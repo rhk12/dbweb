@@ -114,11 +114,15 @@
 .dbt_image:after {
   content: "";
   position: absolute;
-  width: 59%;
+  width: 0%;
   height: 1px;
-  border: 2px dashed #bbb;
-  right: 21%;
+  border: 2px dashed #2980b9;
+  left: 20%;
   top: 30%;
+}
+.dbt_image.dotAnimation:after {
+  width: 59%;
+  transition: 1s all ease-in-out;
 }
 .dbt_image_chain .text{
   width: 190px;

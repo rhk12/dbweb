@@ -23,11 +23,28 @@ export default class HomePage extends React.Component {
     if(number === 1){
         $(".header").removeClass("activehead");
         $(".anima").removeClass("underline-from-center");
+        $(".dbt_image").removeClass("dotAnimation");
     } else {
         $(".header").addClass("activehead");
-        setTimeout(function () {
-          $(".anima").addClass("underline-from-center");
-      }, 1000);
+        if(number === 2){
+          setTimeout(function () {
+            $(".anima").addClass("underline-from-center");
+            $(".dbt_image").addClass("dotAnimation");
+        }, 1000);
+        $(".anima1").removeClass("underline-from-center");
+        }else if(number === 3){
+          $(".anima").removeClass("underline-from-center");
+          $(".anima2").removeClass("underline-from-center");
+          setTimeout(function () {
+            $(".anima1").addClass("underline-from-center");
+            $(".dbt_image").removeClass("dotAnimation");
+        }, 1000);
+        }else if (number === 4){
+          $(".anima1").removeClass("underline-from-center");
+          setTimeout(function () {
+            $(".anima2").addClass("underline-from-center");
+        }, 1000);
+        }
     }
     this.setState({currentPage: number});
     if(number === 4){

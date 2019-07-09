@@ -370,11 +370,10 @@ outline: 1px solid slategrey;
     font-size: 25px;
 }
 }
-.anima:before
+.anima:before,.anima1:before,.anima2:before
 {
   content: "";
   position: absolute;
-  z-index: -1;
   left: 50%;
   right: 50%;
   bottom: -10px;
@@ -386,7 +385,6 @@ outline: 1px solid slategrey;
   width: 20px;
   margin: 0 auto;
 }
-.anima.underline-from-center:before {
-
+.anima.underline-from-center:before,.anima1.underline-from-center:before,.anima2.underline-from-center:before {
   width: 20%;
 }
