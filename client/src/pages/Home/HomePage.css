@@ -386,3 +386,63 @@ color: #2ecc71;
   background: #084371!important;
   height: 100vh;
 } */
+.brain{
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .navbar.navbar-dark.fixed-top.navbar-expand-md.scrolling-navbar{
+    padding: 0px 20px;
+  }
+  .bannerArea {
+    background: -webkit-gradient(linear, left top, right top, from(rgb(8, 65, 110)), color-stop(69%, rgb(13, 110, 187)), color-stop(98%, rgb(15, 129, 220)));
+    background: -webkit-linear-gradient(left, rgb(8, 65, 110) 0%, rgb(13, 110, 187) 69%, rgb(15, 129, 220) 98%);
+    background: -o-linear-gradient(left, rgb(8, 65, 110) 0%, rgb(13, 110, 187) 69%, rgb(15, 129, 220) 98%);
+    background: linear-gradient(90deg, rgb(8, 65, 110) 0%, rgb(13, 110, 187) 69%, rgb(15, 129, 220) 98%);
+}
+.bannerText {
+  top: 55%;
+  left: 0px;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+}
+.downArrow {
+  left: 45%;
+}
+.bannerText h4 {
+  font-size: 20px;
+}
+.bannerText p {
+  font-size: 18px;
+}
+.brain{
+  display: inherit;
+  position: absolute;
+  top: 20%;
+  left: 0;
+  right: 0;
+}
+.understand, .what, .technologies {
+  padding: 100px 10px;
+}
+.understand h1, .what h1, .technologies h1 {
+  font-size: 20px;
+}
+.anima.underline-from-center:before, .anima1.underline-from-center:before, .anima2.underline-from-center:before {
+  width: 55%!important;
+}
+.dbt_heading_para {
+  font-size: 15px;
+}
+.cardsec {
+  padding: 20px 0px;
+  display: block;
+}
+.leftCard, .rightCard {
+  margin: 20px 0px 20px 0px;
+  width: 100%;
+}
+.rightCard {
+  margin-left: 0px!important;
+}
+}
