@@ -24,7 +24,7 @@ export default () => {
             <MDBCol size="4">
             <div className="textsection">
             <div className="imagetag">
-            <img src={require('./../../img/Group 2712.png')}/>
+            <img src={require('./../../img/Group-2426.svg')}/>
             </div>
             </div>
             </MDBCol>

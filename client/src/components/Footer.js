@@ -14,14 +14,14 @@ const Footer = () => {
           </div>
         </MDBRow>
         <MDBRow className="footer_bottom">
-          <div className="cot">Contact Us: Info@digitialbraintech.com</div>
+          <div className="cot">Contact Us: info@digitialbraintech.com</div>
           <div className="fb">
             <div className="menu">
               <span className="pd_0">IP</span>
               <span>Privacy Policy</span>
               <span className="br">Careers</span>
             </div>
-            <div className="copyry">Copyright &copy; 2019 Digital Brain tech. All Rights Reserved.</div>
+            <div className="copyry">Copyright &copy; 2019 Digital Brain Technologies, LLC. All Rights Reserved.</div>
           <div className="icon">
             <span><i className="fab fa-facebook-f"></i></span>
             <span><i className="fab fa-twitter"></i></span>

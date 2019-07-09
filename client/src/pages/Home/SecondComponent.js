@@ -8,13 +8,18 @@ export default () => {
           <h1 className="anima">UNDERSTAND YOUR BRAIN</h1>
           <div className="dbt_heading_para">
             <p>
-              Digital Brain Technologies develops premier computational brain
+              <font color="#084371"> <b>Digital Brain Technologies </b></font> develops premier computational brain
               modeling software and provides services for neural analytics.
-              Innovative sensor and neurotechnology companies use our API to
-              dramatically improve concussion diagnostics, monitor the brain
-              response over decade long time periods, track the initiation and
-              progression of neurodegenerative disease, interpret EEG signals
-              and provide an overall digital picture of your brain.
+              Innovative sensor companies use our API to help <font color="#084371"> <b>quantify how a
+							measured impacts or blast exposure affects the brain tissue response</b></font>.
+
+							We provide the ability to <font color="#084371"> <b>track the accumulated stretching
+							of brain tissue </b></font>due to repetative impacts or blasts.
+
+							Currently, we do not provide a medically-validated, FDA-approved
+							diagnostic device, but that is our long-term goal.
+
+							
             </p>
           </div>
           <div className="dbt_image">

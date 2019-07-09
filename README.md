@@ -1,5 +1,5 @@
 
-# Digital Brain Technologies
+# DBT
 
 ## Steps to run the application
  - Duplicate the /config/AWSConfig.example.json to config/AWSConfig.json
@@ -62,7 +62,4 @@ $ npm start
 # To Run the Application in Dev mode:
 $ npm run start-dev
 ```
-<<<<<<< HEAD
-=======
->>>>>>> 0579481921d54ac40b97ed457e29829dde678483
->>>>>>> master
+
