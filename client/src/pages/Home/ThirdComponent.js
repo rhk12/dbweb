@@ -5,7 +5,7 @@ export default () => {
     <div className="component third-component">
       <section className="container">
         <div className="what">
-          <h1 className="anima">WHAT WE DO</h1>
+          <h1 className="anima1">WHAT WE DO</h1>
           <div className="cardsec">
             <div className="leftCard">
               <img src="/img/icon/Group-2491.png" alt="" />

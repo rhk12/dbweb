@@ -6,7 +6,7 @@ export default () => {
     <div className="component fourth-component" style={{marginBottom: '150px'}}>
       <section className="container">
         <div className="technologies">
-          <h1 className="anima">TECHNOLOGIES WE USE</h1>
+          <h1 className="anima2">TECHNOLOGIES WE USE</h1>
           <div className="tabsection">
           <MDBRow>
             <MDBCol size="4" className="leftDiv">
