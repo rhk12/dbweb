@@ -10,62 +10,83 @@ import $ from "jquery";
 
 export default class HomePage extends React.Component {
   constructor(props) {
-      super(props);
-      this.state = {currentPage: 1};
-      this._pageScroller = null;
+    super(props);
+    this.state = { currentPage: 1 };
+    this._pageScroller = null;
   }
-  goToPage = (eventKey) => {
-      this._pageScroller.goToPage(eventKey);
-      console.log('eventKey',eventKey)
+  goToPage = eventKey => {
+    this._pageScroller.goToPage(eventKey);
+    console.log("eventKey", eventKey);
   };
-  pageOnChange = (number) => {
-    this.setState({currentPage: number});
-    if(number === 1){
-        $(".header").removeClass("activehead");
-        $(".anima").removeClass("underline-from-center");
-        $(".dbt_image").removeClass("dotAnimation");
+  pageOnChange = number => {
+    this.setState({ currentPage: number });
+    if (number === 1) {
+      $(".header").removeClass("activehead");
+      $(".anima").removeClass("underline-from-center");
+      $(".dbt_image").removeClass("dotAnimation");
     } else {
-        $(".header").addClass("activehead");
-        if(number === 2){
-          setTimeout(function () {
-            $(".anima").addClass("underline-from-center");
-            $(".dbt_image").addClass("dotAnimation");
+      $(".header").addClass("activehead");
+      if (number === 2) {
+        setTimeout(() => {
+          $(".anima").addClass("underline-from-center");
+          this.animateDotLine();
         }, 1000);
         $(".anima1").removeClass("underline-from-center");
-        }else if(number === 3){
-          $(".anima").removeClass("underline-from-center");
-          $(".anima2").removeClass("underline-from-center");
-          setTimeout(function () {
-            $(".anima1").addClass("underline-from-center");
-            $(".dbt_image").removeClass("dotAnimation");
+      } else if (number === 3) {
+        $(".anima").removeClass("underline-from-center");
+        $(".anima2").removeClass("underline-from-center");
+        setTimeout(() => {
+          $(".anima1").addClass("underline-from-center");
+          $(".dbt_image").removeClass("dotAnimation");
         }, 1000);
-        }else if (number === 4){
-          $(".anima1").removeClass("underline-from-center");
-          setTimeout(function () {
-            $(".anima2").addClass("underline-from-center");
+      } else if (number === 4) {
+        $(".anima1").removeClass("underline-from-center");
+        setTimeout(() => {
+          $(".anima2").addClass("underline-from-center");
         }, 1000);
-        }
+      }
     }
-    this.setState({currentPage: number});
-    if(number === 4){
+    this.setState({ currentPage: number });
+    if (number === 4) {
       // $(".footer_section").addClass("footerActive");
     } else {
       $(".footer_section").removeClass("footerActive");
-
     }
   };
-  scrollUnavailable = (eventKey) => {
+  scrollUnavailable = eventKey => {
     $(".footer_section").addClass("footerActive");
-};
-
+  };
+  animateDotLine = () => {
+    setTimeout(() => {
+      $(".dbt_image").addClass("dotAnimation");
+    }, 500);
+  };
   render() {
-      return <Fragment>
-          <ReactPageScroller ref={c => this._pageScroller = c} pageOnChange={this.pageOnChange} scrollUnavailable={this.scrollUnavailable}>
-            <FirstComponent/>
-            <SecondComponent/>
-            <ThirdComponent/>
-            <FourthComponent  goToPage={this.goToPage}/>
+    console.log("WINDOW : ",window.screen.orientation);
+    console.log("WINDOW : ",window);
+    if(window.innerWidth <= 480 && window.screen.orientation.type === 'portrait-primary'){
+      return ( <div>
+          <FirstComponent />
+          <SecondComponent />
+          <ThirdComponent />
+          <FourthComponent goToPage={this.goToPage} />
+      </div>
+      )
+    }else{
+      return (
+        <Fragment>
+          <ReactPageScroller
+            ref={c => (this._pageScroller = c)}
+            pageOnChange={this.pageOnChange}
+            scrollUnavailable={this.scrollUnavailable}
+          >
+            <FirstComponent />
+            <SecondComponent />
+            <ThirdComponent />
+            <FourthComponent goToPage={this.goToPage} />
           </ReactPageScroller>
-      </Fragment>
+        </Fragment>
+      );
+    }
   }
 }
