@@ -340,7 +340,7 @@
 }
 
 .downArrow {
-  position: fixed;
+  position: absolute;
   bottom: 2%;
   left: 50%;
 }
@@ -528,13 +528,13 @@
   .brain {
     display: inherit;
     position: absolute;
-    top: 20%;
+    top: 50%;
     left: 0;
     right: 0;
   }
 
   .bannerText {
-    top: 55%;
+    top: 25%;
     left: 0px;
     padding: 20px;
     width: 100%;
@@ -544,7 +544,7 @@
   .understand,
   .what,
   .technologies {
-    padding: 100px 10px;
+    padding: 25px 10px;
   }
 
   .understand h1,
@@ -561,8 +561,12 @@
 
   .dbt_heading_para {
     font-size: 15px;
+    text-align: justify;
+    line-height: 30px;
   }
-
+  .dbt_image{
+    display: block;
+  }
   .cardsec {
     padding: 20px 0px;
     display: block;
@@ -578,21 +582,96 @@
     margin-left: 0px !important;
   }
   .dbt_image_chain{
-    width: 100px;
+    display: flex;
+    width: 100%;
   }
   .image_chain1,.image_chain1:hover,.image_chain3,.image_chain3:hover,.image_chain2:hover,.image_chain2 {
     width: 100px;
     height: 100px;
+    margin: 5px 15px 60px 15px;
+    z-index: 2;
 }
 .dbt_image_chain .text {
-  width: 100px;
-  font-size: 10px;
+  font-size: 14px;
+  margin-top: 25px;
+  text-align: left;
+  width: 250px;
+  line-height: 34px;
 }
 .dbt_image:after {
-  top: 25%;
+  top: 15%;
+  left: 16%;
+  height: 65%;
 }
 .top-nav-collapse.white{
   background-color: transparent!important;
   box-shadow: none!important;
+}
+
+.navbar.white{
+  min-height: 115px;
+}
+.footer_section {
+  position: unset!important;
+}
+.footer_section .main {
+  padding: 0px 10px!important;
+}
+.footer_section .button_s {
+  width: 44%!important;
+}
+.footer_section .button_s button {
+  padding: 7px 20px!important;
+}
+.fb{
+  display: block!important;
+  position: relative;
+  width: 35%;
+  margin-top: 20px;
+}
+.footer_bottom .icon {
+  position: absolute;
+  right: 15px;
+  top: 0px;
+  width: 35%!important;
+}
+.footer_bottom .copyry {
+  width: 100%!important;
+  font-size: 17px!important;
+  margin-top: 30px!important;
+}
+.leftDiv, .rightDiv, .midDiv{
+  max-width: 100%!important;
+  flex: 100%!important;
+  text-align: -webkit-center;
+}
+.rightDiv .imagetag {
+  text-align: unset;
+}
+.rightDiv .text,.rightDiv p {
+  text-align: left;
+}
+.leftDiv h4, .rightDiv h4{
+  font-size: 21px;
+}
+.textsection {
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.navbar.navbar-dark.fixed-top.navbar-expand-md.scrolling-navbar {
+  background-image: linear-gradient(to right, #084473,#0a4a7d,#095692,#0b60a4,#0d6cb9,#0e77cb,#0f7fd8);
+}
+.ml-auto, .mx-auto {
+  margin-left: auto!important;
+  margin-top: 25px;
+}
+.anima:before, .anima1:before, .anima2:before {
+  width: 100px!important;
+}
+.bounce{
+  display:none;
+}
+.what {
+  height: unset;
 }
 }

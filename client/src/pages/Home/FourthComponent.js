@@ -3,7 +3,7 @@ import { MDBRow, MDBCol } from "mdbreact";
 
 export default () => {
   return (
-    <div className="component fourth-component" style={{marginBottom: '150px'}}>
+    <div className="component fourth-component">
       <section className="container">
         <div className="technologies">
           <h1 className="anima2">TECHNOLOGIES WE USE</h1>
@@ -21,7 +21,7 @@ export default () => {
               <p>We partner with leading impact and blast sensor companies to provide real-time brain response analytics. We help transform their data into meaningful brain health monitoring.  Looking for a sensor? See our recommended providers here. </p>
             </div>
             </MDBCol>
-            <MDBCol size="4">
+            <MDBCol size="4" className="midDiv">
             <div className="textsection">
             <div className="imagetag">
             <img src={require('./../../img/Group-2426.svg')}/>
@@ -34,7 +34,7 @@ export default () => {
             </div>
             <div className="text">
               <h4>
-              Computational Brain<br/> Medicine
+              Computational Brain Medicine
               </h4>
               <p>Computational Brain Medicine (CBM) is a transformative and emerging discipline that uses computers to understand, diagnose, develop treatment options, and monitor brain health. It leverages engineering, mathematics and computational science to develop quantitative approaches for brain health applications.
 </p>
