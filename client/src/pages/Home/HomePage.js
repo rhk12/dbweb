@@ -62,9 +62,9 @@ export default class HomePage extends React.Component {
     }, 500);
   };
   render() {
-    console.log("WINDOW : ",window.screen.orientation);
+    console.log("WINDOW : ",window.orientation);
     console.log("WINDOW : ",window);
-    if(window.innerWidth <= 480 && window.screen.orientation.type === 'portrait-primary'){
+    if(window.innerWidth <= 480 && window.orientation === 0){
       return ( <div>
           <FirstComponent />
           <SecondComponent />
