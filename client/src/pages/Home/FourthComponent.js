@@ -36,8 +36,7 @@ export default () => {
               <h4>
               Computational Brain Medicine
               </h4>
-              <p>Computational Brain Medicine (CBM) is a transformative and emerging discipline that uses computers to understand, diagnose, develop treatment options, and monitor brain health. It leverages engineering, mathematics and computational science to develop quantitative approaches for brain health applications.
-</p>
+              <p>Computational Brain Medicine (CBM) is a transformative and emerging discipline that uses computers to understand, diagnose, develop treatment options, and monitor brain health. It leverages engineering, mathematics and computational science to develop quantitative approaches for brain health applications.</p>
             </div>
             </MDBCol>
             <div className="read_Bnt">
