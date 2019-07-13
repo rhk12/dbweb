@@ -492,8 +492,27 @@
 .brain {
   display: none;
 }
+.anima:before,.anima1:before,.anima2:before
+{
+  content: "";
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  bottom: -10px;
+  background: #2980b9;
+  height: 4px;
+  transition: 0.6s all ease-in-out;
+  left: 0;
+  right: 0;
+  width: 20px;
+  margin: 0 auto;
+}
+.anima.underline-from-center:before,.anima1.underline-from-center:before,.anima2.underline-from-center:before {
+  width: 20%;
+}
 
-@media screen and (max-width: 600px) {
+
+@media screen and (max-width: 600px) and (orientation : portrait) {
   .navbar.navbar-dark.fixed-top.navbar-expand-md.scrolling-navbar {
     padding: 0px 20px;
   }
@@ -673,5 +692,113 @@
 }
 .what {
   height: unset;
+}
+}
+
+/* Landscape mode css....... */
+@media only screen and (min-width: 481px) and (max-width: 767px) and (orientation : landscape){
+
+.navbar.navbar-dark.fixed-top.navbar-expand-md.scrolling-navbar{
+  padding: 0px 25px;
+  background-image: linear-gradient(to right, #084473,#0a4a7d,#095692,#0b60a4,#0d6cb9,#0e77cb,#0f7fd8)!important;
+}
+.bannerText {
+  width: 50%;
+  left: 35px;
+}
+.bannerText h4 {
+  font-size: 22px;
+}
+.bannerText p {
+  font-size: 18px;
+}
+.bounce{
+  display: none;
+}
+.dbt_heading_para {
+  text-align: justify;
+  font-size: 18px;
+}
+.understand h1, .what h1, .technologies h1 {
+  font-size: 26px;
+}
+.understand, .what, .technologies {
+  padding: 25px 15px;
+}
+.image_chain1,.image_chain1:hover,.image_chain3,.image_chain3:hover,.image_chain2:hover,.image_chain2 {
+  width: 120px;
+  height: 120px;
+  margin: 5px 15px 0px 15px;
+  z-index: 2;
+}
+.dbt_image_chain .text{
+  width: 150px;
+  font-size: 15px;
+}
+.dbt_image:after {
+  width: 55%;
+  top: 25%;
+}
+.what {
+  height: unset;
+}
+.cardsec {
+  padding: 20px 0px;
+}
+.anima:before, .anima1:before, .anima2:before {
+  width: 80px;
+}
+.leftDiv, .rightDiv, .midDiv{
+  max-width: 100%!important;
+  flex: 100%!important;
+  text-align: -webkit-center;
+}
+.rightDiv .imagetag {
+  text-align: unset;
+}
+.rightDiv .text,.rightDiv p {
+  text-align: left;
+}
+.leftDiv h4, .rightDiv h4{
+  font-size: 21px;
+}
+.textsection {
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.leftDiv .imagetag,.rightDiv .imagetag{
+  text-align: left!important;
+}
+.footer_section {
+  position: unset!important;
+}
+.footer_section .main {
+  padding: 0px 25px!important;
+}
+.footer_section .button_s {
+  width: 44%!important;
+}
+.footer_section .button_s button {
+  padding: 7px 20px!important;
+}
+.fb{
+  display: block!important;
+  position: relative;
+  width: 35%;
+  margin-top: 20px;
+}
+.footer_bottom .icon {
+  position: absolute;
+  right: 15px;
+  top: 0px;
+  width: 35%!important;
+}
+.footer_bottom .copyry {
+  width: 100%!important;
+  font-size: 17px!important;
+  margin-top: 30px!important;
+}
+.footer_section .button_s {
+  width: 65%!important;
 }
 }
