@@ -62,8 +62,6 @@ export default class HomePage extends React.Component {
     }, 500);
   };
   render() {
-    console.log("WINDOW : ",window.orientation);
-    console.log("WINDOW : ",window);
     if((window.innerWidth <= 480 && window.orientation === 0) || (window.innerWidth <= 750 && window.orientation === 90)){
       return ( <div>
           <FirstComponent />

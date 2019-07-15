@@ -579,8 +579,8 @@
   }
 
   .dbt_heading_para {
-    font-size: 15px;
-    text-align: justify;
+    font-size: 14px;
+    text-align: left;
     line-height: 30px;
   }
   .dbt_image{
@@ -693,6 +693,9 @@
 .what {
   height: unset;
 }
+.menubar {
+  display: inherit;
+}
 }
 
 /* Landscape mode css....... */
@@ -800,5 +803,18 @@
 }
 .footer_section .button_s {
   width: 65%!important;
+}
+.rightDiv,.leftDiv{
+  display: flex;
+}
+.imagetag{
+  width: 70%;
+  padding: 24px 0;
+}
+.leftDiv .imagetag img {
+  width: 65%;
+}
+.menubar {
+  display: inherit;
 }
 }

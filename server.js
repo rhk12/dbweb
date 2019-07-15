@@ -3,19 +3,21 @@
 //         INITIALIZING DEPENDENCIES
 // ======================================
 const express = require('express');
-	app = express(),
-	bodyParser = require("body-parser"),
-	AWS = require('aws-sdk'),
-	cors = require('cors'),
-	AmazonCognitoIdentity = require('amazon-cognito-identity-js'),
-    utility = require('./utilities/utility'),
-    VerifyToken = require('./verify_user'),
-    cookieParser = require('cookie-parser'),
-	archiver = require("archiver"),
-	fs = require("fs"),
-	path = require("path"),
-	uploadFile = require("./upload.js"),
-	global.fetch = require('node-fetch');
+	var app = express();
+	var bodyParser = require("body-parser");
+	var AWS = require('aws-sdk');
+	var cors = require('cors');
+	var AmazonCognitoIdentity = require('amazon-cognito-identity-js');
+    var utility = require('./utilities/utility');
+    var VerifyToken = require('./verify_user');
+    var cookieParser = require('cookie-parser');
+	var archiver = require("archiver");
+	var fs = require("fs");
+	var path = require("path");
+	var uploadFile = require("./upload.js");
+	var global = {
+        fetch = require('node-fetch')
+    };
 
 // ================================================
 //            SERVER CONFIGURATION
