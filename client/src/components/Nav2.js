@@ -1,27 +1,21 @@
 import React from 'react';
 import {MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavbarToggler, MDBCollapse, MDBNavItem, MDBNavLink} from 'mdbreact';
 import { BrowserRouter as Router } from 'react-router-dom';
-
+import $ from "jquery";
 
 import "./Nav2.css";
 
 class FullPageIntroWithFixedTransparentNavbar extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      collapse: false,
-      isWideEnough: false,
-    };
-    this.onClick = this.onClick.bind(this);
+    this.state = {isToggleOn: false};
   }
-
-  onClick() {
+  handleClick(data) {
     this.setState({
-      collapse: !this.state.collapse,
-    });
+      isToggleOn: !this.state.isToggleOn
+    })
+    console.log('this is:', data);
   }
-
-
   render()  {
     return (
       <div>
@@ -32,8 +26,7 @@ class FullPageIntroWithFixedTransparentNavbar extends React.Component {
 								<img className="fixedimage" src="/img/Logo.png" height="300" alt=""/>
                 <img className="scrollimage" src="https://www.digitalbraintech.com/wp-content/uploads/2017/11/Logo-07-1.png" height="300" alt=""/>
               </MDBNavbarBrand>
-              {!this.state.isWideEnough && <MDBNavbarToggler onClick={this.onClick} />}
-              <MDBCollapse isOpen={this.state.collapse} navbar>
+              <MDBCollapse  navbar>
                 <MDBNavbarNav right>
                   <MDBNavItem>
                     <MDBNavLink to="#">FRAMEWORK</MDBNavLink>
@@ -49,7 +42,21 @@ class FullPageIntroWithFixedTransparentNavbar extends React.Component {
                   </MDBNavItem>
                 </MDBNavbarNav>
               </MDBCollapse>
+              <div className="menubar">
+                <div className="icon_button" onClick={(e) => this.handleClick(true)}>
+                  <i className="fa fa-bars" aria-hidden="true"></i>
+                </div>
+                <div className={`list ${this.state.isToggleOn ? "show": ''}`}>
+                  <ul>
+                    <li>FRAMEWORK</li>
+                    <li>DEMO</li>
+                    <li>FOR DEVELOPERS</li>
+                    <li>CONTACT US</li>
+                  </ul>
+                </div>
+              </div>
             </MDBNavbar>
+            
           </Router>
         </header>
       </div>
