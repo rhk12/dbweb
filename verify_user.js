@@ -1,7 +1,7 @@
 // Middle-ware to verify the idToken retrieved from cookie
 var https = require('https');
 var jose = require('node-jose');
-var cognito = require("./config/cognito_configuration");
+var cognito = require("./config/configuration_keys");
 
 // ================================================
 //            MIDDLEWARE CONFIGURATION
@@ -22,12 +22,14 @@ function VerifyToken(req, res, next) {
     'Access-Control-Allow-Headers',
     'Origin, X-Requested-With, Content-Type, Accept'
   )
+  res.header("Access-Control-Allow-Origin", "http://nsfcareer.io/");
 
+ // res.header("Access-Control-Allow-Origin", "*");
     console.log("Verify Token is called");
-    
+
     try {
         var sections = req.cookies.token.split('.');
-        
+
         // get the kid from the headers prior to verification
         var header = jose.util.base64url.decode(sections[0]);
 
@@ -87,7 +89,7 @@ function VerifyToken(req, res, next) {
                                 req["user_cognito_id"] = claims.sub;
                                 next();
                             }
-                            
+
                         }).
                         catch(function () {
                             console.log('Signature verification failed');
@@ -103,7 +105,7 @@ function VerifyToken(req, res, next) {
         });
     } catch (e) {
         console.log("Invalid token Input");
-        
+
         res.send({
             message : "failure",
             status : "AUTH_FAILURE",
