@@ -44,7 +44,8 @@ class FullPageIntroWithFixedTransparentNavbar extends React.Component {
               </MDBCollapse>
               <div className="menubar">
                 <div className="icon_button" onClick={(e) => this.handleClick(true)}>
-                  <i className="fa fa-bars" aria-hidden="true"></i>
+                  <i className={`fa fa-bars ${this.state.isToggleOn ? "showIcon": ''}`} aria-hidden="true"></i>
+                  <i className={`fa fa-times ${!this.state.isToggleOn ? "showIconCross": ''}`}  aria-hidden="true"></i>
                 </div>
                 <div className={`list ${this.state.isToggleOn ? "show": ''}`}>
                   <ul>
