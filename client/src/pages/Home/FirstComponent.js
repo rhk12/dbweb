@@ -7,7 +7,7 @@ export default () => {
                 <div className="brain"><img src={require('./../../img/Artboard.svg')}/></div>
                 <div className="bannerText">
                 <h4>MONITOR YOUR BRAIN HEALTH</h4>
-                <p>Accurate brain simulations to help transform your sensor data into actionable insights about brain trauma.</p>
+                <p>Accurate brain simulations help transform your sensor data into actionable insights about brain trauma.</p>
                 </div>
                 <div className="downArrow bounce">
                 <img src={require('./../../img/down-arrow.png')}/>
